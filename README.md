@@ -1,3 +1,53 @@
+---
+
+# Appointment Reminder System
+
+A Laravel 12 RESTful API for managing appointments, clients, and sending appointment reminders asynchronously using queues. Supports timezone-aware reminders, recurring appointments, and reminder preferences.
+
+---
+
+## Requirements
+
+- PHP 8.2+
+- Docker
+- Composer
+
+---
+
+## Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/KKrusteF/appointment-reminder.git
+cd appointment-reminder
+
+cp .env.example .env
+
+composer install
+
+./vendor/bin/sail up -d
+./vendor/bin/sail artisan key:generate
+```
+
+### 2. Configure the environment
+Update the `.env` file with database and mail settings:
+
+```dotenv
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=appointment_reminder
+DB_USERNAME=sail
+DB_PASSWORD=password
+```
+
+### 3. Run migrations and seed the database
+
+```bash
+./vendor/bin/sail artisan migrate --seed
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
