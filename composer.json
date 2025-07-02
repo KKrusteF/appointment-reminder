@@ -11,6 +11,8 @@
         "laravel/sail": "^1.43",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
+        "laravel/ui": "^4.6",
+        "rlanvin/php-rrule": "^2.6",
         "spatie/laravel-medialibrary": "^11.13",
         "spatie/laravel-permission": "^6.20",
         "spatie/laravel-query-builder": "^6.3"
